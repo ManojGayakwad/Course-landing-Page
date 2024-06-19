@@ -3,7 +3,7 @@ import { Box, Text, Divider, Image, useMediaQuery, Icon, Button } from '@chakra-
 import { CheckCircleIcon, CalendarIcon } from '@chakra-ui/icons';
 
 
-const Frame14 = () => {
+const Frame14 = ({onOpen}) => {
     const [isMediumScreen] = useMediaQuery("(min-width: 48em)");
     return (
         <Box position="relative" background="#003399" p={4} color="white" display="flex" fontFamily="arial" justifyContent="center" alignItems="center" flexDirection="column">
@@ -21,7 +21,7 @@ const Frame14 = () => {
                         </Text>
                     </Box>
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" mt={2} >
-                        <a href='https://admissions.emeritus.org/?locale=English&program_sfid=01tRC000000HQ9NYAW&source=applynowty&utm_campaign=B-365D_IN_GG_DA_IIMK-DSAI_Discovery_Tier1&utm_content=Custom-Intent&utm_medium=Search&utm_source=Google'><Button variant="outline" bgColor="#003399" color="white" p={6} fontSize={{ base: "15px", md: "20px" }} _hover={{ color: "black", background: "white" }}>START APPLICATION NOW</Button></a>
+                        <Button variant="outline" bgColor="#003399" color="white" p={6} fontSize={{ base: "15px", md: "20px" }} _hover={{ color: "black", background: "white" }} onClick={onOpen}>START APPLICATION NOW</Button>
                     </Box>
                 </Box>
             </Box>

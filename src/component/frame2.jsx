@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Text, Divider, Image, useMediaQuery, Icon, Button } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons'
 
-const Frame2 = () => {
+const Frame2 = ({onOpen}) => {
     const [isMediumScreen] = useMediaQuery("(min-width: 48em)");
 
     return (
@@ -86,7 +86,7 @@ const Frame2 = () => {
                     </Box>
                     <Text fontSize="14px" mt={10}>Note : Basic understanding of mathematics and statistics is recommended for the programme.</Text>
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" mt={8}>
-                        <a href='https://admissions.emeritus.org/?locale=English&program_sfid=01tRC000000HQ9NYAW&source=applynowty&utm_campaign=B-365D_IN_GG_DA_IIMK-DSAI_Discovery_Tier1&utm_content=Custom-Intent&utm_medium=Search&utm_source=Google'> <Button variant="simple" bgColor="#003399" color="white">APPLY NOW</Button> </a>
+                        <Button variant="simple" bgColor="#003399" color="white" onClick={onOpen}>APPLY NOW</Button>
                     </Box>
                 </Box>
                 <Divider borderColor="gray.300" mt={14} />

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Box, Divider, Flex, Text, Button, useMediaQuery } from '@chakra-ui/react';
 
-const StickyNavbar = () => {
+const StickyNavbar = ({ onOpen }) => {
     const [isSticky, setIsSticky] = useState(false);
     const [isMediumScreen] = useMediaQuery("(min-width: 48em)");
 
@@ -82,8 +82,8 @@ const StickyNavbar = () => {
                         </Box>
                         )} 
                         {isMediumScreen && (
-                            <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center">
-                               <a href='https://admissions.emeritus.org/?locale=English&program_sfid=01tRC000000HQ9NYAW&source=applynowty&utm_campaign=B-365D_IN_GG_DA_IIMK-DSAI_Discovery_Tier1&utm_content=Custom-Intent&utm_medium=Search&utm_source=Google'><Button variant="simple" bgColor="#003399" color="white">APPLY NOW</Button></a>
+                            <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" onClick={onOpen}>
+                               <Button variant="simple" bgColor="#003399" color="white" onClick={onOpen}>APPLY NOW</Button>
                             </Box>
                         )}
                     </Flex>
