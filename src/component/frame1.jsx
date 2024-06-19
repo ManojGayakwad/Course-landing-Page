@@ -26,7 +26,7 @@ const theme = extendTheme({
     },
 });
 
-const Frame1 = () => {
+const Frame1 = ({onOpen}) => {
     return (
         <Box
             position="relative"
@@ -77,7 +77,7 @@ const Frame1 = () => {
                     </Box>
                     <Text ml="35px" fontSize="15px" mb={6}>Have questions? Our Advisor will assist you promptly.</Text>
                     <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
-                        <a href='https://admissions.emeritus.org/?locale=English&program_sfid=01tRC000000HQ9NYAW&source=applynowty&utm_campaign=B-365D_IN_GG_DA_IIMK-DSAI_Discovery_Tier1&utm_content=Custom-Intent&utm_medium=Search&utm_source=Google'> <Button variant="simple" bgColor="#003399" color="white">START APPLICATION NOW</Button></a>
+                        <Button variant="simple" bgColor="#003399" color="white" onClick={onOpen}>START APPLICATION NOW</Button>
                     </Box>
                 </Box>
 
