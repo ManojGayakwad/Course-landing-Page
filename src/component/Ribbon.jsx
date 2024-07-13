@@ -12,7 +12,7 @@ const Ribbon = () => {
                 textAlign="center"
                 flexDirection={{base:"column", md:"row"}}
             >
-                <Text fontSize="sm" m={0} display="inline-block">
+                {/* <Text fontSize="sm" m={0} display="inline-block">
                     Invite Your Colleague and Save INR 10,000
                 </Text>
                 <Text>
@@ -27,7 +27,7 @@ const Ribbon = () => {
                     >
                     Invite Now
                     </Link>
-                </Text>
+                </Text> */}
             </Flex>
         </Box>
     );

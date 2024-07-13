@@ -29,11 +29,11 @@ const StickyNavbar = ({ onOpen }) => {
             zIndex={1000}
         >
             <Flex flexDirection={{ base: "column", md: "row" }} gap={5}>
-                <Box display="flex" flexDirection="row" gap={{ base: 4, md: 8 }}>
+                <Box display="flex" flexDirection="row" gap={{ base:18, md: 8 }}>
                     <Flex flexDirection="row" gap={{ base: 10, md: 10 }}>
                         <Box>
                             <Text fontSize="13px">STARTS ON</Text>
-                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>June 26, 2024</Text>
+                            <Text fontWeight="700" fontSize={{ base: "17px", md: "18px" }}>19<sup>st</sup> August 2024</Text>
                         </Box>
                         {isMediumScreen && ( 
                         <Box height="130px" position="relative" display="flex" alignItems="flex-end">
@@ -44,7 +44,9 @@ const StickyNavbar = ({ onOpen }) => {
                     <Flex flexDirection="row"  gap={{ base: 10, md: 10 }}>
                         <Box >
                             <Text fontSize="13px">DURATION</Text>
-                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>8 Months, Online</Text>
+                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>1 Year</Text>
+                            <Text fontWeight="700" fontSize={{ base: "15px", md: "16px" }}>(6 Months Training & 6 Months Project Internship)</Text>
+                            {/* (6 months Training and 6 Months Projects Internship) */}
                             <Text>Weekly effort of 7-8 hours</Text>
                         </Box>
                         {isMediumScreen && ( 
@@ -55,25 +57,25 @@ const StickyNavbar = ({ onOpen }) => {
                     </Flex>
                 </Box>
                 <Box display="flex" flexDirection="row" gap={{ base: 4, md: 8 }}>
-                    <Flex flexDirection="row" gap={{ base: 10, md: 10 }}>
-                        <Box>
+                    {/* <Flex flexDirection="row" gap={{ base: 10, md: 10 }}> */}
+                        {/* <Box>
                             <Text fontSize="13px">PROGRAMME FEE</Text>
                             <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>₹1,50,000</Text>
                             <Text>GST will be charged at checkout</Text>
                             <Text>View payment plan</Text>
-                        </Box>
-                        {isMediumScreen && ( 
+                        </Box> */}
+                        {/* {isMediumScreen && ( 
                         <Box height="130px" position="relative" display="flex" alignItems="flex-end">
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
-                        )} 
-                    </Flex>
+                        )}  */}
+                    {/* </Flex> */}
                     <Flex flexDirection={{base:"column", md:"row"}} gap={{ base: 10, md: 10 }}>
                         <Box>
                             <Text>Eligibility</Text>
-                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>Minimum Graduate or</Text>
-                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>Diploma Holder (10+2+3)</Text>
-                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>in any discipline </Text>
+                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>B.E. in any branch, M.Sc./ B. Sc.(Comp),</Text>
+                            <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>MCA</Text>
+                            {/* <Text fontWeight="700" fontSize={{ base: "15px", md: "18px" }}>in any discipline </Text> */}
                             <Text>Documents Required to Apply</Text>
                         </Box>
                         {isMediumScreen && ( 

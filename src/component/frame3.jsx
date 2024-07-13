@@ -9,9 +9,9 @@ const Frame3 = () => {
 
                 <Box p={4} minWidth={{ base: "100%", md: "initial" }}>
                     <Box  >
-                        <Image src="./p1.webp" alt="profile" boxSize={380} h={250} />
-                        <Text p={4} fontSize="18px" fontWeight="700">Globally Renowned Faculty</Text>
-                        <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
+                        <Image src="./p1.webp" alt="profile" boxSize={580} h={250} />
+                        <Text p={4} fontSize="18px" fontWeight="700">Teamcenter Functional </Text>
+                        {/* <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
                             <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} mt={-8} />
                             <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
                                 Learn from the best instructors and resources from anywhere in the world.                        </Text>
@@ -22,7 +22,7 @@ const Frame3 = () => {
                             <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
                                 Access the experts, regardless of their location.
                             </Text>
-                        </Box>
+                        </Box> */}
                     </Box>
 
                     {/* P2 */}
@@ -31,9 +31,9 @@ const Frame3 = () => {
 
                 <Box p={4} minWidth={{ base: "100%", md: "initial" }}>
                     <Box >
-                        <Image src="./p2.webp" alt="profile" boxSize={350} h={250} />
-                        <Text p={4} fontSize="18px" fontWeight="700">Cohort-Based Learning</Text>
-                        <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
+                        <Image src="./p2.webp" alt="profile" boxSize={550} h={250} />
+                        <Text p={4} fontSize="18px" fontWeight="700">Teamcenter Admin Configuration and installation </Text>
+                        {/* <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
                             <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} mt={-8} />
                             <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
                                 Learn with an accomplished group of peers and build your network.
@@ -45,7 +45,7 @@ const Frame3 = () => {
                             <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
                                 Gain cross-industry and cross-functional knowledge.
                             </Text>
-                        </Box>
+                        </Box> */}
                     </Box>
 
                     {/* P3 */}
@@ -53,9 +53,9 @@ const Frame3 = () => {
                 </Box>
                 <Box minWidth={{ base: "100%", md: "initial" }} p={4}>
                     <Box >
-                        <Image src="./p3.webp" alt="profile" boxSize={350} h={250} />
-                        <Text p={4} fontSize="18px" fontWeight="700">Flexible Learning</Text>
-                        <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
+                        <Image src="./p1.webp" alt="profile" boxSize={550} h={250} />
+                        <Text p={4} fontSize="18px" fontWeight="700">Teamcenter Customization (ITK, SOA)</Text>
+                        {/* <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
                             <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} mt={-8} />
                             <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
                                 Learn at your own pace with high-quality, pre-recorded faculty videos.
@@ -67,12 +67,63 @@ const Frame3 = () => {
                             <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
                                 Advance your career without disrupting your busy schedule.
                             </Text>
-                        </Box>
+                        </Box> */}
                     </Box>
 
+
                     {/* P2 */}
+                    
 
                 </Box>
+                <Box minWidth={{ base: "100%", md: "initial" }} p={4}>
+                    <Box >
+                        <Image src="./p2.webp" alt="profile" boxSize={650} h={250} />
+                        <Text p={4} fontSize="18px" fontWeight="700">Teamcenter AWC (User, Admin, Customization)</Text>
+                        {/* <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
+                            <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} mt={-8} />
+                            <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
+                                Learn at your own pace with high-quality, pre-recorded faculty videos.
+                            </Text>
+                        </Box>
+
+                        <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} mt={2}>
+                            <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} />
+                            <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
+                                Advance your career without disrupting your busy schedule.
+                            </Text>
+                        </Box> */}
+                    </Box>
+
+
+                    {/* P2 */}
+                    
+
+                </Box>
+                <Box minWidth={{ base: "100%", md: "initial" }} p={4}>
+                    <Box >
+                        <Image src="./p3.webp" alt="profile" boxSize={650} h={250} />
+                        <Text p={4} fontSize="18px" fontWeight="700">Basic of Programming Languages C, C++, Java Script, HTML, React JS</Text>
+                        {/* <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} >
+                            <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} mt={-8} />
+                            <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
+                                Learn at your own pace with high-quality, pre-recorded faculty videos.
+                            </Text>
+                        </Box>
+
+                        <Box display="flex" alignItems="center" width={{ base: "100%", md: "80%" }} mt={2}>
+                            <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} />
+                            <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
+                                Advance your career without disrupting your busy schedule.
+                            </Text>
+                        </Box> */}
+                    </Box>
+
+
+                    {/* P2 */}
+                    
+
+                </Box>
+                
             </Box>
         </>
     );

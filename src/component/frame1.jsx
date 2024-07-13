@@ -26,7 +26,7 @@ const theme = extendTheme({
     },
 });
 
-const Frame1 = ({onOpen}) => {
+const Frame1 = ({ onOpen }) => {
     return (
         <Box
             position="relative"
@@ -34,28 +34,27 @@ const Frame1 = ({onOpen}) => {
             color="black"
             fontFamily="GT Sectra Fine"
             // fontWeight="600" 
-            backgroundImage="linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./bg.jpg')" // Path to your background image
-            backgroundPosition="top"
-            backgroundPositionX="center"
-            backgroundPositionY="top"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-
+            backgroundImage="linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./bg123.jpeg')" // Path to your background image
+            backgroundSize="contain,100% 100%,100% 100%"
+            backgroundPosition="cover"
+            height={{base:"100vw",md:"35vw"}}
+           backgroundRepeat="no-repeat"
 
         >
             <Box p={{ base: "15px", md: "20px" }} color="white" display='flex' flexDirection={{ base: "column", md: "row" }} gap={28}>
-                <Box padding={{ base: "2px", md: "70px" }} mt={{base:"240px" , md:"170px"}} >
-                    <Text p={2} textAlign="center" bgColor="rgba(34, 34, 34, .5)" width={{ base: "40%", md: "20%" }} ml={{ base: "80px", md: "0px" }}>BATCH 3</Text>
+                <Box padding={{ base: "2px", md: "70px" }} mt={20} >
+                    {/* <Text p={2} textAlign="center" bgColor="rgba(34, 34, 34, .5)" width={{ base: "40%", md: "20%" }} ml={{ base: "80px", md: "0px" }}>BATCH 3</Text> */}
                     {/* Programme in Data Science and Artificial Intelligence */}
-                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%">Professional Certificate</Text>
-                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%">Programme in Data Science and</Text>
-                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%"> Artificial Intelligence</Text>
-                    <Checkbox isChecked={true} defaultChecked theme={theme}>
+                    {/* <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%">One Year Professional Certificate Programme</Text>
+                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%">in Siemens Teamcenter PLM</Text>
+                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%"> (Product Lifecycle Management)</Text> */}
+                    {/* <Checkbox isChecked={true} defaultChecked theme={theme}>
                         Integrated with Generative AI
-                    </Checkbox>
+                    </Checkbox> */}
                 </Box>
+                {/* One Year Professional Certificate Programme in Siemens Teamcenter PLM (Product Lifecycle Management)*/}
                 {/* form */}
-                <Box width={{ base: "100%", md: "360px" }} background="#fff" p={4} color="black" fontFamily='arial'  >
+                {/* <Box width={{ base: "100%", md: "360px" }} background="#fff" p={4} color="black" fontFamily='arial'  >
                     <Flex flexDirection="column" justifyContent="center" alignItems="center">
                         <CheckCircleIcon w={8} h={8} mb={2} color="#003399" boxSize={14} />
                         <Text textAlign={{ base: "center", md: "initial" }} fontWeight="600" fontSize="20px" mb="5px">Thank you for your interest.</Text>
@@ -79,7 +78,7 @@ const Frame1 = ({onOpen}) => {
                     <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center">
                         <Button variant="simple" bgColor="#003399" color="white" onClick={onOpen}>START APPLICATION NOW</Button>
                     </Box>
-                </Box>
+                </Box> */}
 
             </Box>
 

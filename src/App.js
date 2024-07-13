@@ -31,14 +31,14 @@ const App = () => {
       <Frame2 onOpen={onOpen}/>
       <Frame3 />
       <Frame4 />
-      <Frame5 />
-      <Frame6 />
-      <Frame7 />
-      <Frame8 />
-      <Frame9 />
-      <Frame10 />
+      {/* <Frame5 /> */}
+      {/* <Frame6 /> */}
+      {/* <Frame7 /> */}
+      {/* <Frame8 /> */}
+      {/* <Frame9 /> */}
+      {/* <Frame10 /> */}
       <Frame11 />
-      <Frame12 />
+      {/* <Frame12 /> */}
       <Frame13 />
       <Frame14 onOpen={onOpen}/>
       <ApplyNowModal isOpen={isOpen} onClose={onClose} />

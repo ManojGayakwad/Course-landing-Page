@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
-import { Box, Text, Divider, Icon, useMediaQuery } from '@chakra-ui/react';
+import { Box, Text, Divider, Icon, useMediaQuery, ListItem, UnorderedList} from '@chakra-ui/react';
 import { CheckCircleIcon, ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons';
 
 const Dropdown = ({ isOpen, toggleDropdown, moduleNumber, moduleName, items }) => (
     <>
-        <Box display="flex" flexDirection="row" width={{ base: "100%", md: "98%" }} p={{base:0, md:4}} >
-            <Box display="flex" flexDirection="row"  ml={{base:0 , md:200}}>
-
-                <Text fontWeight="700" fontSize={{ base: "15px", md: "16px" }} >{moduleName} </Text>
+        <Box display="flex" flexDirection="row" width={{ base: "100%", md: "98%" }} p={{ base: 0, md: 4 }} >
+            <Box display="flex" flexDirection="row" ml={{ base: 0, md: 200 }}>
+                <UnorderedList spacing={2}>
+                    <ListItem fontWeight="700" fontSize={{ base: "15px", md: "16px" }} ml={{ base: "10px", md: "180px" }}>{moduleName} </ListItem>
+                </UnorderedList>
             </Box>
 
         </Box>
         {!isOpen && (
-            <Box display="flex" width={{ base: "100%", md: "80%" }} flexDirection="column" gap={4} ml={{base:0 , md:200}}>
+            <Box display="flex" width={{ base: "100%", md: "80%" }} flexDirection="column" gap={4} ml={{ base: 0, md: 200 }}>
                 {items.map((item, index) => (
                     <Box key={index} display="flex" alignItems="center" width={{ base: "100%", md: "80%" }}>
                         <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} />
@@ -28,7 +29,7 @@ const Dropdown = ({ isOpen, toggleDropdown, moduleNumber, moduleName, items }) =
 
 const Frame11 = () => {
     const [isMediumScreen] = useMediaQuery("(min-width: 48em)");
-    const [openDropdown, setOpenDropdown] = useState(null);
+    const [openDropdown, setOpenDropdown] = useState(true);
 
     const toggleDropdown = (index) => {
         setOpenDropdown(openDropdown === index ? null : index);
@@ -37,27 +38,46 @@ const Frame11 = () => {
     const modules = [
         {
             number: "1",
-            name: "15 Recorded sessions and resources in the following categories(Please note: These sessions are not live):",
+            name: "Siemens’s Training Completion Certificate",
             items: [
-                'Resume and Cover Letter',"Navigating Job Search", "Interview Preparation", "LinkedIn Profile Optimisation"
             ]
         },
         {
             number: "2",
-            name: "Job Placement Assistance",
+            name: "One Year Training Completion Certificate",
             items: [
-                "Job openings are sourced by the CS Team and virtual hiring drives are conducted for the applicants.",
-                 "Dedicated online portal for all candidates where they can apply for jobs & track past applications.",
-                 "Regular job postings."
             ]
         },
         {
             number: "3",
-            name: "Please note:",
+            name: "Internship with Stipend",
             items: [
-"                IIM Kozhikode or Emeritus do NOT promise or guarantee a job or progression in your current job. Career Services is only offered as a service that empowers you to manage your career proactively. Emeritus offers the Career Services mentioned here. IIM Kozhikode is NOT involved in any way and makes no commitments regarding the Career Services mentioned here.",
-                "Job placement assistance is focused for students with 0 to 5 yrs of experience.",
-                "This service is available only for Indian residents enrolled in select Emeritus programmes."
+
+            ]
+        },
+        {
+            number: "4",
+            name: "Access to Prerecorded training video Library",
+            items: [
+
+            ]
+        },
+        {
+            number: "5",
+            name: "In-Depth Knowledge of PLM",
+            items: [
+            ]
+        },
+        {
+            number: "6",
+            name: "Hands On projects on Teamcenter ",
+            items: [
+            ]
+        },
+        {
+            number: "7",
+            name: "Best Quality Study Materials ",
+            items: [
             ]
         }
     ];
@@ -66,12 +86,12 @@ const Frame11 = () => {
         <Box>
             {/* <Divider borderColor="gray.300" mt={8} /> */}
 
-            <Box position="relative" display="flex" p={{ base: 4, md: 10 }} justifyContent="center" alignItems="center" fontFamily="Arial" flexDirection="column">
-                <Text fontSize={{ base: "24px", md: "40px" }} textAlign="center" fontFamily="GT Sectra Fine" fontWeight="700" mb={5}>Emeritus Career Services</Text>
+            <Box position="relative" display="flex" p={{ base: 4, md: 10 }} justifyContent="center" alignItems="center" fontFamily="Arial" flexDirection="column"  >
+                <Text fontSize={{ base: "24px", md: "40px" }} textAlign="center" fontFamily="GT Sectra Fine" fontWeight="700" mb={5}>Key Programme Takeaways</Text>
 
                 {modules.map((module, index) => (
                     <Dropdown
-                        
+
                         key={index}
                         isOpen={openDropdown === index}
                         toggleDropdown={() => toggleDropdown(index)}
@@ -81,9 +101,9 @@ const Frame11 = () => {
                     />
                 ))}
 
-                 <Divider borderColor="gray.300" mt={14} />          
-                </Box>
-                
+                {/* <Divider borderColor="gray.300" mt={14} /> */}
+            </Box>
+
         </Box>
     );
 };
