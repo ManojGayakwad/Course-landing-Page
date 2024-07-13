@@ -12,6 +12,7 @@ import {
   FormLabel,
   Input,
   FormErrorMessage,
+  Select,
   useToast,
 } from '@chakra-ui/react';
 import { ref, push } from 'firebase/database';
@@ -19,10 +20,13 @@ import { db } from './firebaseConfig';
 
 const ApplyNowModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
-    fname: '',
-    lname: '',
+    name: '',
+    contact: '',
+    gender: '',
     email: '',
-    phone: '',
+    city: '',
+    education: '',
+    experience: '',
   });
   const [errors, setErrors] = useState({});
   const toast = useToast();
@@ -36,18 +40,21 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
 
   const validate = () => {
     let errors = {};
-    if (!formData.fname) errors.fname = "First Name is required";
-    if (!formData.lname) errors.lname = "Last Name is required";
+    if (!formData.name) errors.name = "Name is required";
+    if (!formData.contact) {
+      errors.contact = "Contact is required";
+    } else if (!/^\d{10}$/.test(formData.contact)) {
+      errors.contact = "Contact number is invalid. It should be 10 digits";
+    }
     if (!formData.email) {
       errors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errors.email = "Email is invalid";
     }
-    if (!formData.phone) {
-      errors.phone = "Phone is required";
-    } else if (!/^\d{10}$/.test(formData.phone)) {
-      errors.phone = "Phone number is invalid. It should be 10 digits";
-    }
+    if (!formData.city) errors.city = "City is required";
+    if (!formData.education) errors.education = "Education is required";
+    if (!formData.experience) errors.experience = "Experience is required";
+    if (!formData.gender) errors.gender = "Gender is required";
     return errors;
   };
 
@@ -81,10 +88,13 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
 
   const handleClose = () => {
     setFormData({
-      fname: '',
-      lname: '',
+      name: '',
+      contact: '',
+      gender: '',
       email: '',
-      phone: '',
+      city: '',
+      education: '',
+      experience: '',
     });
     setErrors({});
     onClose();
@@ -97,25 +107,47 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
         <ModalHeader>Apply Now</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <FormControl id="fname" isInvalid={errors.fname}>
-            <FormLabel>First Name</FormLabel>
-            <Input type="text" value={formData.fname} onChange={handleChange} />
-            {errors.fname && <FormErrorMessage>{errors.fname}</FormErrorMessage>}
+          <FormControl id="name" isInvalid={errors.name}>
+            <FormLabel>Name</FormLabel>
+            <Input type="text" value={formData.name} onChange={handleChange} />
+            {errors.name && <FormErrorMessage>{errors.name}</FormErrorMessage>}
           </FormControl>
-          <FormControl id="lname" isInvalid={errors.lname}>
-            <FormLabel>Last Name</FormLabel>
-            <Input type="text" value={formData.lname} onChange={handleChange} />
-            {errors.lname && <FormErrorMessage>{errors.lname}</FormErrorMessage>}
+          <FormControl id="contact" mt={4} isInvalid={errors.contact}>
+            <FormLabel>Contact</FormLabel>
+            <Input type="tel" value={formData.contact} onChange={handleChange} />
+            {errors.contact && <FormErrorMessage>{errors.contact}</FormErrorMessage>}
+          </FormControl>
+          <FormControl id="gender" mt={4} isInvalid={errors.gender}>
+            <FormLabel>Gender</FormLabel>
+            <Select placeholder="Select gender" value={formData.gender} onChange={handleChange}>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </Select>
+            {errors.gender && <FormErrorMessage>{errors.gender}</FormErrorMessage>}
           </FormControl>
           <FormControl id="email" mt={4} isInvalid={errors.email}>
             <FormLabel>Email</FormLabel>
             <Input type="email" value={formData.email} onChange={handleChange} />
             {errors.email && <FormErrorMessage>{errors.email}</FormErrorMessage>}
           </FormControl>
-          <FormControl id="phone" mt={4} isInvalid={errors.phone}>
-            <FormLabel>Phone</FormLabel>
-            <Input type="tel" value={formData.phone} onChange={handleChange} />
-            {errors.phone && <FormErrorMessage>{errors.phone}</FormErrorMessage>}
+          <FormControl id="city" mt={4} isInvalid={errors.city}>
+            <FormLabel>City</FormLabel>
+            <Input type="text" value={formData.city} onChange={handleChange} />
+            {errors.city && <FormErrorMessage>{errors.city}</FormErrorMessage>}
+          </FormControl>
+          <FormControl id="education" mt={4} isInvalid={errors.education}>
+            <FormLabel>Education</FormLabel>
+            <Input type="text" value={formData.education} onChange={handleChange} />
+            {errors.education && <FormErrorMessage>{errors.education}</FormErrorMessage>}
+          </FormControl>
+          <FormControl id="experience" mt={4} isInvalid={errors.experience}>
+            <FormLabel>Fresher/Experienced</FormLabel>
+            <Select placeholder="Select option" value={formData.experience} onChange={handleChange}>
+              <option value="fresher">Fresher</option>
+              <option value="experienced">Experienced</option>
+            </Select>
+            {errors.experience && <FormErrorMessage>{errors.experience}</FormErrorMessage>}
           </FormControl>
         </ModalBody>
         <ModalFooter>
