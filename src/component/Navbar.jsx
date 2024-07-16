@@ -7,7 +7,7 @@ const Navbar = () => {
       <Flex align="center" justify="space-between" p={{ base: "2px", md: "4px" }} width={{ base: "100%", md: "100%" }}>
         <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" >
           <Image src="./logo12.jfif" alt="Left Image" ml={{ base: "0px", md: "60px" }} />
-          <Text fontSize={{base:"12px", md:"20px"}} textAlign="center" ml={{base:"4px", md:"60px"}} mt="-15px">ExpertPLM Technologies</Text>
+          <Text fontSize={{base:"12px", md:"20px"}} textAlign="center" ml={{base:"4px", md:"60px"}} mt="-15px" fontWeight="600" fontFamily="Copperplate Gothic Bold">ExpertPLM Technologies</Text>
         </Box>
         <Divider orientation="vertical" borderColor="gray.300" borderWidth="0.2px" />
 

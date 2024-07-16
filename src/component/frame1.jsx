@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Text, Checkbox, extendTheme, Button, Flex } from '@chakra-ui/react';
+import { Box, Text, Checkbox, extendTheme, Button, Flex, UnorderedList, ListItem } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons'
 import { FiDownload } from "react-icons/fi";
 import { IoIosCall } from "react-icons/io";
@@ -34,20 +34,27 @@ const Frame1 = ({ onOpen }) => {
             color="black"
             fontFamily="GT Sectra Fine"
             // fontWeight="600" 
-            backgroundImage="linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./bg123.jpeg')" // Path to your background image
+            backgroundImage="linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('./unk23.png')" // Path to your background image
             backgroundSize="contain,100% 100%,100% 100%"
             backgroundPosition="cover"
-            height={{base:"100vw",md:"35vw"}}
-           backgroundRepeat="no-repeat"
+            height={{ base: "100vw", md: "45vw" }}
+            backgroundRepeat="no-repeat"
 
         >
-            <Box p={{ base: "15px", md: "20px" }} color="white" display='flex' flexDirection={{ base: "column", md: "row" }} gap={28}>
-                <Box padding={{ base: "2px", md: "70px" }} mt={20} >
+            <Box color="white" display='flex' flexDirection={{ base: "column", md: "row" }}  justifyContent={{base:"justify", md:"center"}} gap={28}>
+                <Box padding={{ base: "6px", md: "20px" }} mt={{ base: 28, md: 56 }} width={{ base: "100%", md: "100%" }} mr={{base:0, md:480}}>
                     {/* <Text p={2} textAlign="center" bgColor="rgba(34, 34, 34, .5)" width={{ base: "40%", md: "20%" }} ml={{ base: "80px", md: "0px" }}>BATCH 3</Text> */}
                     {/* Programme in Data Science and Artificial Intelligence */}
-                    {/* <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%">One Year Professional Certificate Programme</Text>
-                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%">in Siemens Teamcenter PLM</Text>
-                    <Text textAlign={{ base: "center", md: "initial" }} fontSize={{ base: "2.2rem", md: "2.625rem" }} fontWeight="700" lineHeight="120%"> (Product Lifecycle Management)</Text> */}
+                    <Text textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">One Year Professional Certificate Programme</Text>
+                    <Text textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">in Siemens Teamcenter PLM</Text>
+                    <Text color="#F6B70A" textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">(Product Lifecycle Management)</Text>
+                    <Box mt={5}>
+                        <Text textAlign={{ base: "initial", md: "justify" }} fontSize={{ base: "15px", md: "25px" }} fontFamily="Copperplate Gothic Bold" fontWeight="700">Elligibility :- B.E(Any Branch), M.Sc(Comp)</Text>
+                        <Text textAlign={{ base: "initial", md: "justify" }} fontSize={{ base: "15px", md: "25px"}} fontFamily="Copperplate Gothic Bold" fontWeight="700" ml={{base:"85px", md:"140px"}}>B.sc(Comp), MCA</Text>
+
+                    </Box>
+
+
                     {/* <Checkbox isChecked={true} defaultChecked theme={theme}>
                         Integrated with Generative AI
                     </Checkbox> */}

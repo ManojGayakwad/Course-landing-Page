@@ -1,6 +1,14 @@
 import React from 'react';
 import { Box, Text, Divider, Image, useMediaQuery, Icon, Button, UnorderedList, ListItem } from '@chakra-ui/react';
 import { CheckCircleIcon } from '@chakra-ui/icons'
+import { SiGoogleclassroom } from "react-icons/si";
+import { MdModelTraining } from "react-icons/md";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { TbUsersGroup } from "react-icons/tb";
+import { MdSpatialTracking } from "react-icons/md";
+import { FaLaptop } from "react-icons/fa";
+import { LiaCertificateSolid } from "react-icons/lia";
+
 
 const Frame2 = ({ onOpen }) => {
     const [isMediumScreen] = useMediaQuery("(min-width: 48em)");
@@ -10,16 +18,16 @@ const Frame2 = ({ onOpen }) => {
             <Box display="flex" flexDirection="column" background="#f4f4f4" justifyContent="center" alignItems="center" color="black" width={{ base: "100%", md: "70%" }} p={{ base: 6, md: 10 }} style={{ fontWeight: "600" }}>
                 <UnorderedList spacing={2} ml={{base:0, md:40}}>
                     <ListItem fontSize={{ base: "15px", md: "22px" }} textAlign={{ base: "justify", md: "justify" }}>
-                        Application Deadline: <span>20th July 2024</span>
+                        Application Deadline: <span>01<sup>st</sup> Aug 2024</span>
                     </ListItem>
                     <ListItem fontSize={{ base: "15px", md: "20px" }} textAlign={{ base: "justify", md: "justify" }}>
                         Number of seats available: <span>25 No's only</span>
                     </ListItem>
-                    <ListItem fontSize={{ base: "15px", md: "20px" }} textAlign={{ base: "justify", md: "justify" }}>
+                    {/* <ListItem fontSize={{ base: "15px", md: "20px" }} textAlign={{ base: "justify", md: "justify" }}>
                         Training Mode: <span>Online and Offline</span>
-                    </ListItem>
+                    </ListItem> */}
                     <ListItem fontSize={{ base: "15px", md: "20px" }} textAlign={{ base: "justify", md: "justify" }}>
-                        Admission Process: <span>Admission will be given to candidates based on performance on their personal interview</span>
+                        Admission Process: <span>Admission will be given to candidates based on performance on personal disccussion</span>
                     </ListItem>
                 </UnorderedList>
             </Box>
@@ -36,7 +44,7 @@ const Frame2 = ({ onOpen }) => {
 
                 <Box display="flex" flexDirection={{ base: "column", md: "row" }} mt={5} gap={4}>
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L1.webp" alt="First Image"  w={"60px"} h={"60px"} />
+                        <Icon as={SiGoogleclassroom} alt="First Image" color="#003399"  w={"60px"} h={"60px"} />
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Live/Classroom Training by Industry PLM Experts</Text>
 
                     </Box>
@@ -46,7 +54,7 @@ const Frame2 = ({ onOpen }) => {
                         </Box>
                     )}
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L2.webp" alt="First Image" w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}} />
+                        <Icon as={MdModelTraining} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}} />
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }} mr={{base:8 , md:"initial"}}>One Month Free Training</Text>
 
                     </Box>
@@ -56,8 +64,8 @@ const Frame2 = ({ onOpen }) => {
                         </Box>
                     )}
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L3.webp" alt="First Image"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
-                        <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}  mr={{base:3 , md:"initial"}}>Hands on Industry Projects</Text>
+                        <Icon as={AiFillSafetyCertificate} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
+                        <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}  mr={{base:3 , md:"initial"}}>Hands on Industry Based Projects</Text>
 
                     </Box>
                     {isMediumScreen && (
@@ -66,7 +74,7 @@ const Frame2 = ({ onOpen }) => {
                         </Box>
                     )}
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L4.webp" alt="First Image"  w={"60px"} h={"60px"} />
+                        <Icon as={TbUsersGroup} alt="First Image" color="#003399"  w={"60px"} h={"60px"} />
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Interview Preparation and Group Discussion</Text>
 
                     </Box>
@@ -83,7 +91,7 @@ const Frame2 = ({ onOpen }) => {
                         </Box>
                     )}
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L3.webp" alt="First Image"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
+                        <Icon as={MdSpatialTracking} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Individual Performance Tracking </Text>
 
                     </Box>
@@ -93,7 +101,7 @@ const Frame2 = ({ onOpen }) => {
                         </Box>
                     )}
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L3.webp" alt="First Image"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
+                        <Icon as={FaLaptop} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Weekly live doubt-clearing sessions</Text>
 
                     </Box>
@@ -103,7 +111,7 @@ const Frame2 = ({ onOpen }) => {
                         </Box>
                     )}
                     <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
-                        <Image src="./L3.webp" alt="First Image"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
+                        <Icon as={LiaCertificateSolid} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>6 months Internship with Stipend</Text>
 
                     </Box>
@@ -123,9 +131,9 @@ const Frame2 = ({ onOpen }) => {
 
                     {/* Add check circle Icon as bullets of following code */}
                     <Box display="flex" alignItems="center" width={{ base: "100%", md: "65%" }} mt={4}>
-                        <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} />
-                        <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
-                            Freshers, job seekers and career-oriented graduates with following educational qualifications
+                        {/* <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} /> */}
+                        <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }} fontWeight="bold">
+                            Freshers, Job Seekers and Career-Oriented graduates with following educational qualifications
                         </Text>
                     </Box>
 
@@ -138,7 +146,13 @@ const Frame2 = ({ onOpen }) => {
                     <Box display="flex" alignItems="center" width={{ base: "100%", md: "65%" }} mt={2}>
                         <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} />
                         <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
-                            M.Sc./ B.Sc. (Comp) & MCA
+                            M.Sc./ B.Sc. (Comp)
+                        </Text>
+                    </Box>
+                    <Box display="flex" alignItems="center" width={{ base: "100%", md: "65%" }} mt={2}>
+                        <Icon as={CheckCircleIcon} w={5} h={5} color="gray.300" mr={2} />
+                        <Text textAlign="justify" fontSize={{ base: "15px", md: "18px" }}>
+                            MCA
                         </Text>
                     </Box>
                     {/* <Text fontSize="14px" mt={10}>Note : Basic understanding of mathematics and statistics is recommended for the programme.</Text> */}

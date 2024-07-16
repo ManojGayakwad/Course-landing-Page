@@ -14,11 +14,11 @@ const Frame4 = () => {
                 <Box mt={{ base: "20px" }} display="flex" justifyContent="center" alignItems="center" flexDirection="column">
                     <Text fontSize={{ base: "24px", md: "32px" }} textAlign="justify" fontFamily="GT Sectra Fine" fontWeight="700">Why Choose PLM as career?</Text>
                     {/* <Text textAlign="center" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }}>Harness the full potential of Data Science and AI for a rapidly-changing world</Text> */}
-                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}>1.<span style={{fontWeight:"600"}}>High Demand in Market:</span> Many industries, including automotive, aerospace, electronics, and consumer goods, rely on PLM systems to manage the entire lifecycle of a product. This reliance creates a steady demand for PLM professionals.</Text>
-                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}>2.<span style={{fontWeight:"600"}}>*Diverse Career Opportunities*:</span> PLM professionals can work in various roles such as PLM Consultant, PLM Admin and Support, PLM Developer, project managers, business analysts, system architects. This diversity allows for career growth and the opportunity to switch roles while staying within the same field.</Text>
-                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}>3.<span style={{fontWeight:"600"}}>*Innovation and Technology*:</span> Working in PLM involves dealing with cutting-edge technologies and innovative processes. This can be appealing to those who enjoy staying at the forefront of technological advancements.</Text>
-                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}>4.<span style={{fontWeight:"600"}}>*Interdisciplinary Skills*:</span> PLM requires a blend of skills in engineering, business, and IT. This multidisciplinary approach can be intellectually stimulating and offers a broad skill set that is transferable to other roles.</Text>
-                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}>5.<span style={{fontWeight:"600"}}>*Competitive Salaries*:</span> Due to the specialized knowledge and skills required, PLM professionals often enjoy competitive salaries and benefits.</Text>
+                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}><span style={{ fontWeight: "600", color: "#003399" }}>1. High Demand in Market:</span> Many industries, including automotive, aerospace, electronics, and consumer goods, rely on PLM systems to manage the entire lifecycle of a product. This reliance creates a steady demand for PLM professionals.</Text>
+                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}><span style={{ fontWeight: "600", color: "#003399" }}>2. Diverse Career Opportunities:</span> PLM professionals can work in various roles such as PLM Consultant, PLM Admin and Support, PLM Developer, project managers, business analysts, system architects. This diversity allows for career growth and the opportunity to switch roles while staying within the same field.</Text>
+                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}><span style={{ fontWeight: "600", color: "#003399" }}>3. Innovation and Technology:</span> Working in PLM involves dealing with cutting-edge technologies and innovative processes. This can be appealing to those who enjoy staying at the forefront of technological advancements.</Text>
+                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}><span style={{ fontWeight: "600", color: "#003399" }}>4. Interdisciplinary Skills:</span> PLM requires a blend of skills in engineering, business, and IT. This multidisciplinary approach can be intellectually stimulating and offers a broad skill set that is transferable to other roles.</Text>
+                    <Text textAlign="justify" fontSize={{ base: "16px", md: "18px" }} width={{ base: "100%", md: "55%" }} mt={5}><span style={{ fontWeight: "600", color: "#003399" }}>5. Competitive Salaries:</span> Due to the specialized knowledge and skills required, PLM professionals often enjoy competitive salaries and benefits.</Text>
                 </Box>
                 {/* <Box display="flex" flexDirection={{base:"column" , md:"row"}} p={8} gap={10} justifyContent="center" alignItems="center">
                     <Box width={{base:"100%" ,md:"18%"}} display="flex" justifyContent="center" alignItems="center" flexDirection="column">
@@ -44,7 +44,7 @@ const Frame4 = () => {
                 </Box> */}
                 {/* <Divider borderColor="gray.300" /> */}
             </Box>
-            
+
         </Box>
     );
 }

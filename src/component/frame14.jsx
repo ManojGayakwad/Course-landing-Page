@@ -6,16 +6,18 @@ import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 
+
 const Frame14 = ({ onOpen }) => {
     const [isMediumScreen] = useMediaQuery("(min-width: 48em)");
     return (
-        <Box position="relative" background="#349fd2" p={4} color="white" display="flex" fontFamily="arial" justifyContent="space-around" flexDir={{base:"column", md:"row"}} >
+        <Box position="relative" background="#003399" p={4} color="white" display="flex" fontFamily="arial" justifyContent="space-around" flexDir={{base:"column", md:"row"}} >
             {/* <Divider borderColor="gray.300" /> */}
-            <Box  >
-                <Box fontSize={{base:"17px", md:"18px"}} textAlign="center" mt={10}>
+            <Box>
+                <Box fontSize={{base:"15px", md:"18px"}} textAlign={{base:"center", md:"justify"}} mt={10}>
                     <Text>Contact:+91-9975001439</Text>
-                    <Text>Address:Pune,MAHARASHTRA</Text>
+                    <Text>Address:Bavdhan,Pune,MAHARASHTRA</Text>
                     <Text>E-MAIL US:info@expertplmtechnologies.com</Text>
+                    <Text>Visit On: www.expertplm.com/www.expertplmtechnologies.com</Text>
                 </Box>
 
             </Box>
@@ -24,14 +26,14 @@ const Frame14 = ({ onOpen }) => {
                 {/* <Text display="flex" fontSize={{ base: "15px", md: "18px" }} justifyContent="center" textAlign="center">
                         Flexible payment options available.View payment plan
                     </Text> */}
-                <Box display="flex" justifyContent="center" width="100%" mt={4}>
+                <Box display="flex" justifyContent="center"  mt={4}>
                     <Icon as={CalendarIcon} w={{ base: 5, md: 7 }} h={{ base: 5, md: 7 }} color="white" mr={2} />
-                    <Text textAlign={{ base: "initial", md: "initial" }} fontSize={{ base: "15px", md: "20px" }} fontWeight="700">
+                    <Text  fontSize={{ base: "15px", md: "20px" }} fontWeight="700">
                         Starts On 19<sup>st</sup> August 2024
                     </Text>
                 </Box>
                 <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" mt={2} >
-                    <Button variant="outline" bgColor="#349fd2" color="white" p={6} fontSize={{ base: "15px", md: "20px" }} _hover={{ color: "black", background: "white" }} onClick={onOpen}>START APPLICATION NOW</Button>
+                    <Button variant="outline" bgColor="#349fd2" color="white" p={6} fontSize={{ base: "15px", md: "20px" }} _hover={{ color: "black", background: "white" }} onClick={onOpen}>APPLY NOW</Button>
                 </Box>
             </Box>
             <Box ml={{base:"80px", md:"initial"}}>
@@ -44,7 +46,7 @@ const Frame14 = ({ onOpen }) => {
                 </Box>
                 </a>
                 <a href="https://www.instagram.com/expertplm_technologies_pune?igsh=enZrMGNuNTdsbXpm"><Box display="flex"  alignItems="center"  flexDirection="row" width="100%" mt={4} >
-                    <Icon as={FaInstagram} w={{ base: 5, md: 7 }} h={{ base: 5, md: 7 }} color="white" mr={2} />
+                    <Icon as={FaInstagram} w={{ base: 5, md: 7 }} h={{ base: 5, md: 7 }} mr={2} />
                     <Text fontSize={{ base: "15px", md: "20px" }} >
                         Instagram
                     </Text>
