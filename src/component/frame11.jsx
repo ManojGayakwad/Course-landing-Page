@@ -57,7 +57,7 @@ const Frame11 = () => {
         },
         {
             number: "4",
-            name: "Access to Prerecorded training video Library",
+            name: "Access to Prerecorded Training Video Library",
             items: [
 
             ]
@@ -70,7 +70,7 @@ const Frame11 = () => {
         },
         {
             number: "6",
-            name: "Hands On projects on Teamcenter ",
+            name: "Hands-On Projects on Teamcenter PLM ",
             items: [
             ]
         },

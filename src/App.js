@@ -39,7 +39,7 @@ const App = () => {
       {/* <Frame10 /> */}
       <Frame11 />
       {/* <Frame12 /> */}
-      <Frame13 />
+      {/* <Frame13 /> */}
       <Frame14 onOpen={onOpen}/>
       <ApplyNowModal isOpen={isOpen} onClose={onClose} />
     </ChakraProvider>
