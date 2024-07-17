@@ -27,6 +27,7 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
     city: '',
     education: '',
     experience: '',
+    preferredMode: '', // Added preferredMode field
   });
   const [errors, setErrors] = useState({});
   const toast = useToast();
@@ -55,6 +56,7 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
     if (!formData.education) errors.education = "Education is required";
     if (!formData.experience) errors.experience = "Experience is required";
     if (!formData.gender) errors.gender = "Gender is required";
+    if (!formData.preferredMode) errors.preferredMode = "Preferred Mode is required"; // Added validation for preferredMode
     return errors;
   };
 
@@ -74,7 +76,7 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
         duration: 5000,
         isClosable: true,
       });
-      handleClose(); // Call the updated handleClose
+      handleClose();
     } catch (e) {
       toast({
         title: 'Submission Failed.',
@@ -95,6 +97,7 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
       city: '',
       education: '',
       experience: '',
+      preferredMode: '', // Reset preferredMode field
     });
     setErrors({});
     onClose();
@@ -148,6 +151,14 @@ const ApplyNowModal = ({ isOpen, onClose }) => {
               <option value="experienced">Experienced</option>
             </Select>
             {errors.experience && <FormErrorMessage>{errors.experience}</FormErrorMessage>}
+          </FormControl>
+          <FormControl id="preferredMode" mt={4} isInvalid={errors.preferredMode}> {/* Added preferredMode field */}
+            <FormLabel>Preferred Mode</FormLabel>
+            <Select placeholder="Select mode" value={formData.preferredMode} onChange={handleChange}>
+              <option value="online">Online</option>
+              <option value="offline">Offline</option>
+            </Select>
+            {errors.preferredMode && <FormErrorMessage>{errors.preferredMode}</FormErrorMessage>}
           </FormControl>
         </ModalBody>
         <ModalFooter>
