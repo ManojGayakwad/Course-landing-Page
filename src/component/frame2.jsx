@@ -43,7 +43,7 @@ const Frame2 = ({ onOpen }) => {
                 <Text fontSize={{ base: "24px", md: "40px" }} display="flex" justifyContent="center" alignItems="center" fontFamily="GT Sectra Fine" fontWeight="700">Programme Highlights</Text>
 
                 <Box display="flex" flexDirection={{ base: "column", md: "row" }} mt={5} gap={4}>
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={SiGoogleclassroom} alt="First Image" color="#003399"  w={"60px"} h={"60px"} />
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Live/Classroom Training by Industry PLM Experts</Text>
 
@@ -53,9 +53,9 @@ const Frame2 = ({ onOpen }) => {
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
                     )}
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={MdModelTraining} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}} />
-                        <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }} mr={{base:8 , md:"initial"}}>One Month Free Training</Text>
+                        <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }} >One Month Free Training</Text>
 
                     </Box>
                     {isMediumScreen && (
@@ -63,7 +63,7 @@ const Frame2 = ({ onOpen }) => {
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
                     )}
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={AiFillSafetyCertificate} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}  mr={{base:3 , md:"initial"}}>Hands on Industry Based Projects</Text>
 
@@ -73,7 +73,7 @@ const Frame2 = ({ onOpen }) => {
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
                     )}
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={TbUsersGroup} alt="First Image" color="#003399"  w={"60px"} h={"60px"} />
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Interview Preparation and Group Discussion</Text>
 
@@ -90,7 +90,7 @@ const Frame2 = ({ onOpen }) => {
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
                     )}
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={MdSpatialTracking} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Individual Performance Tracking </Text>
 
@@ -100,7 +100,7 @@ const Frame2 = ({ onOpen }) => {
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
                     )}
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={FaLaptop} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>Weekly live doubt-clearing sessions</Text>
 
@@ -110,7 +110,7 @@ const Frame2 = ({ onOpen }) => {
                             <Divider orientation="vertical" borderColor="gray" />
                         </Box>
                     )}
-                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent="center" alignItems="center" gap={5}>
+                    <Box display="flex" flexDirection={{ base: "row", md: "column" }} justifyContent={{base:"justify", md:"center"}} alignItems="center" gap={5}>
                         <Icon as={LiaCertificateSolid} alt="First Image" color="#003399"  w={"60px"} h={"60px"}  mt={{base:"initial" , md:6}}/>
                         <Text textAlign={{ base: "justify", md: "center" }} fontSize={{ base: "16px", md: "18px" }}>6 months Internship with Stipend</Text>
 
@@ -162,7 +162,7 @@ const Frame2 = ({ onOpen }) => {
                 </Box>
                 <Divider borderColor="gray.300" mt={14} />
                 <Box mt={8}>
-                    <Text fontSize={{ base: "24px", md: "35px" }} textAlign="center" display="flex" justifyContent="center" alignItems="center" fontFamily="GT Sectra Fine" fontWeight="700">
+                    <Text fontSize={{ base: "24px", md: "35px" }}  textAlign="center" display="flex" justifyContent="center" alignItems="center" fontFamily="GT Sectra Fine" fontWeight="700">
                         Training Highlights
                     </Text>
                 </Box>
