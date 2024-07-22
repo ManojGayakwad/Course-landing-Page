@@ -18,7 +18,7 @@ const Frame2 = ({ onOpen }) => {
             <Box display="flex" flexDirection="column" background="#f4f4f4" justifyContent="center" alignItems="center" color="black" width={{ base: "100%", md: "70%" }} p={{ base: 6, md: 10 }} style={{ fontWeight: "600" }}>
                 <UnorderedList spacing={2} ml={{base:0, md:40}}>
                     <ListItem fontSize={{ base: "15px", md: "22px" }} textAlign={{ base: "justify", md: "justify" }}>
-                        Application Deadline: <span>01<sup>st</sup> Aug 2024</span>
+                        Application Deadline: <span>10<sup>th</sup> Aug 2024</span>
                     </ListItem>
                     <ListItem fontSize={{ base: "15px", md: "20px" }} textAlign={{ base: "justify", md: "justify" }}>
                         Number of seats available: <span>25 No's only</span>
@@ -157,7 +157,7 @@ const Frame2 = ({ onOpen }) => {
                     </Box>
                     {/* <Text fontSize="14px" mt={10}>Note : Basic understanding of mathematics and statistics is recommended for the programme.</Text> */}
                     <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" mt={8}>
-                        <Button variant="simple" bgColor="#003399" color="white" onClick={onOpen}>APPLY NOW</Button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY5LvSlP8L1I9v9Zbl71DVWFucwDt0kyLsn7X-moC5i9J6gQ/viewform" target="_blank"><Button variant="simple" bgColor="#003399" color="white" >APPLY NOW</Button></a>
                     </Box>
                 </Box>
                 <Divider borderColor="gray.300" mt={14} />
