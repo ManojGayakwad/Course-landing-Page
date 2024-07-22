@@ -45,8 +45,8 @@ const Frame1 = ({ onOpen }) => {
                 <Box padding={{ base: "6px", md: "20px" }} mt={{ base: 28, md: 56 }} width={{ base: "100%", md: "100%" }} mr={{base:0, md:480}}>
                     {/* <Text p={2} textAlign="center" bgColor="rgba(34, 34, 34, .5)" width={{ base: "40%", md: "20%" }} ml={{ base: "80px", md: "0px" }}>BATCH 3</Text> */}
                     {/* Programme in Data Science and Artificial Intelligence */}
-                    <Text textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">One Year Professional Certificate Programme</Text>
-                    <Text textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">in Siemens Teamcenter PLM</Text>
+                    <Text textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">One Year Professional Certificate Programme in Siemens Teamcenter PLM</Text>
+                    <Text textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%"></Text>
                     <Text color="#F6B70A" textAlign={{ base: "initial", md: "center" }} fontSize={{ base: "1.2rem", md: "2.625rem" }} fontFamily="Copperplate Gothic Bold" fontWeight="700" lineHeight="120%">(Product Lifecycle Management)</Text>
                     <Box mt={5}>
                         <Text textAlign={{ base: "initial", md: "justify" }} fontSize={{ base: "15px", md: "25px" }} fontFamily="Copperplate Gothic Bold" fontWeight="700">Elligibility :- B.E(Any Branch), M.Sc(Comp)</Text>
