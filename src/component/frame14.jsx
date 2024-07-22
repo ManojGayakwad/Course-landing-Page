@@ -14,7 +14,7 @@ const Frame14 = ({ onOpen }) => {
             {/* <Divider borderColor="gray.300" /> */}
             <Box>
                 <Box fontSize={{base:"15px", md:"18px"}} textAlign={{base:"center", md:"justify"}} mt={10}>
-                    <Text>Contact:+91-9975001439</Text>
+                    <Text>Contact:+91-7387501439/9975001439</Text>
                     <Text>Address:Bavdhan,Pune,MAHARASHTRA</Text>
                     <Text>E-MAIL US:info@expertplmtechnologies.com</Text>
                     <Text>Visit On: www.expertplm.com/www.expertplmtechnologies.com</Text>
@@ -33,7 +33,7 @@ const Frame14 = ({ onOpen }) => {
                     </Text>
                 </Box>
                 <Box display="flex" flexDirection="row" justifyContent="center" alignItems="center" mt={2} >
-                    <Button variant="outline" bgColor="#349fd2" color="white" p={6} fontSize={{ base: "15px", md: "20px" }} _hover={{ color: "black", background: "white" }} onClick={onOpen}>APPLY NOW</Button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY5LvSlP8L1I9v9Zbl71DVWFucwDt0kyLsn7X-moC5i9J6gQ/viewform" target="_blank"><Button variant="outline" bgColor="#349fd2" color="white" p={6} fontSize={{ base: "15px", md: "20px" }} _hover={{ color: "black", background: "white" }}>APPLY NOW</Button></a>
                 </Box>
             </Box>
             <Box ml={{base:"80px", md:"initial"}}>

@@ -85,8 +85,8 @@ const StickyNavbar = ({ onOpen }) => {
                             </Box>
                         )}
                        
-                            <Box display="flex" flexDirection="row" ml={{base:"80px", md:"initial"}} justifyContent="center" alignItems="center" onClick={onOpen}>
-                                <Button variant="simple" bgColor="#003399" color="white" onClick={onOpen}>APPLY NOW</Button>
+                            <Box display="flex" flexDirection="row" ml={{base:"80px", md:"initial"}} justifyContent="center" alignItems="center">
+                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY5LvSlP8L1I9v9Zbl71DVWFucwDt0kyLsn7X-moC5i9J6gQ/viewform" target="_blank"><Button variant="simple" bgColor="#003399" color="white">APPLY NOW</Button></a>  
                             </Box>
                        
                     </Flex>
