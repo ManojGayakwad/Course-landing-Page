@@ -14,10 +14,10 @@ const Frame14 = ({ onOpen }) => {
             {/* <Divider borderColor="gray.300" /> */}
             <Box>
                 <Box fontSize={{base:"15px", md:"18px"}} textAlign={{base:"center", md:"justify"}} mt={10}>
-                    <Text>Contact:+91-7387501439/9975001439</Text>
-                    <Text>Address:Bavdhan,Pune,MAHARASHTRA</Text>
-                    <Text>E-MAIL US:info@expertplmtechnologies.com</Text>
-                    <Text>Visit On: www.expertplm.com/www.expertplmtechnologies.com</Text>
+                    <Text>Contact : +91-7387501439/9975001439</Text>
+                    <Text>Address : Bavdhan,Pune,MAHARASHTRA</Text>
+                    <Text>E-MAIL US : info@expertplmtechnologies.com</Text>
+                    <Text>Visit On : www.expertplm.com/www.expertplmtechnologies.com</Text>
                 </Box>
 
             </Box>
