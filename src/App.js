@@ -1,7 +1,7 @@
 import "./App.css";
 import Ribbon from "./component/Ribbon";
 import Navbar from "./component/Navbar";
-import { ChakraProvider , useDisclosure } from '@chakra-ui/react';
+import { ChakraProvider, useDisclosure } from "@chakra-ui/react";
 import Frame1 from "./component/frame1";
 import StickyNavbar from "./component/StickyNavbar";
 import Frame2 from "./component/frame2";
@@ -18,6 +18,7 @@ import Frame12 from "./component/frame12";
 import Frame13 from "./component/frame13";
 import Frame14 from "./component/frame14";
 import ApplyNowModal from "./component/Form/form";
+import FloatingWhatsAppButton from "./component/whatsapp/whatsapp";
 
 const App = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -26,9 +27,9 @@ const App = () => {
     <ChakraProvider>
       <Ribbon />
       <Navbar />
-      <Frame1  onOpen={onOpen}/>
-      <StickyNavbar onOpen={onOpen}/>
-      <Frame2 onOpen={onOpen}/>
+      <Frame1 onOpen={onOpen} />
+      <StickyNavbar onOpen={onOpen} />
+      <Frame2 onOpen={onOpen} />
       <Frame3 />
       <Frame4 />
       {/* <Frame5 /> */}
@@ -40,8 +41,12 @@ const App = () => {
       <Frame11 />
       {/* <Frame12 /> */}
       {/* <Frame13 /> */}
-      <Frame14 onOpen={onOpen}/>
+      <Frame14 onOpen={onOpen} />
       <ApplyNowModal isOpen={isOpen} onClose={onClose} />
+      <FloatingWhatsAppButton
+        phoneNumber="+917387501439" // Replace with your phone number in international format
+        message="Hello, My friend."
+      />
     </ChakraProvider>
   );
 };
