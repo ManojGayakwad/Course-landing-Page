@@ -33,7 +33,7 @@ const StickyNavbar = ({ onOpen }) => {
                     <Flex flexDirection="row" gap={{ base: 10, md: 10 }}>
                         <Box>
                             <Text fontSize="15px" textColor="#003399" fontWeight="bold">STARTS ON</Text>
-                            <Text fontWeight="700" fontSize={{ base: "17px", md: "18px" }}>19<sup>st</sup> August 2024</Text>
+                            <Text fontWeight="700" fontSize={{ base: "17px", md: "18px" }}>1<sup>st</sup> Of Every Month</Text>
                         </Box>
                         {isMediumScreen && (
                             <Box height="130px" position="relative" display="flex" alignItems="flex-end">
@@ -86,7 +86,8 @@ const StickyNavbar = ({ onOpen }) => {
                         )}
                        
                             <Box display="flex" flexDirection="row" ml={{base:"80px", md:"initial"}} justifyContent="center" alignItems="center">
-                              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY5LvSlP8L1I9v9Zbl71DVWFucwDt0kyLsn7X-moC5i9J6gQ/viewform" target="_blank"><Button variant="simple" bgColor="#003399" color="white">APPLY NOW</Button></a>  
+                              {/* <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY5LvSlP8L1I9v9Zbl71DVWFucwDt0kyLsn7X-moC5i9J6gQ/viewform" target="_blank"><Button variant="simple" bgColor="#003399" color="white">APPLY NOW</Button></a>   */}
+                            <b> Contact Us: +91-9975001439 / 7387501439 </b>
                             </Box>
                        
                     </Flex>
